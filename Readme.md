@@ -38,36 +38,31 @@ Este estudo foi conduzido em ambiente de laboratório, com o objetivo de simular
 
 ### Etapas do experimento
 
-1. **Definição do ambiente de teste**  
+1. **Definição do ambiente de teste**
+   - Foi utilizada uma Máquina virtual Windows 11 com Windows Defender devidamente configurado e funcional.
    - Criação de diretórios específicos contendo arquivos de exemplo (textos, imagens simples).  
-   - Garantia de que nenhum arquivo de produção ou pessoal fosse utilizado.  
+   - Garantia de que nenhum arquivo de produção ou pessoal fosse utilizado.
+   - Todos os arquivos de Python foram **compilados** para executávies windows e utilizados neste ambiente de simulação
+   - Foram utilizados batch scripts / vb scripts de apoio para uma instalação silent, sthealth e persistente no ambiente de teste.
 
-2. **Geração da chave de criptografia**  
+3. **Geração da chave de criptografia**  
    - A chave é criada dinamicamente com base no computador e usuário.  
    - É enviada por e‑mail para simular um fluxo de armazenamento externo.  
    - O arquivo local da chave é removido após o envio, mantendo apenas a versão em memória durante a execução.  
 
-3. **Criptografia dos arquivos**  
+4. **Criptografia dos arquivos**  
    - Cada arquivo é lido e criptografado com a chave Fernet.  
    - O conteúdo original é sobrescrito com a versão criptografada.  
    - Um arquivo de mensagem (“Leia.txt”) é gerado para indicar que os dados foram protegidos.  
 
-4. **Validação do processo**  
+5. **Validação do processo**  
    - Verificação de que todos os arquivos foram alterados.  
-   - Testes de recuperação utilizando a chave recebida por e‑mail.  
+   - Testes de recuperação utilizando a chave recebida por e‑mail.
 
-### Considerações éticas
+### Consideração Final / Final Consideration
 
-- O código **não deve ser usado em ambientes reais** para criptografar dados de terceiros.  
-- O propósito é **educacional e científico**, demonstrando como ataques de ransomware funcionam e como backups criptografados podem ser implementados.  
-
-### Mitigação e boas práticas
-
-- **Backups offline e em nuvem**: manter cópias redundantes fora do alcance de ataques.  
-- **Gestão de chaves**: utilizar cofres digitais para armazenar chaves de forma segura.  
-- **Monitoramento de comportamento**: detectar processos que tentam criptografar grandes volumes de arquivos.  
-- **Treinamento de usuários**: reduzir riscos de infecção por phishing e engenharia social.  
-- **Testes periódicos de restauração**: garantir que backups possam ser recuperados em caso de incidente.  
+Este resultado reforça a necessidade de **modelos de segurança Zero Trust**, nos quais nenhuma aplicação ou processo é implicitamente confiável.  
+Mesmo ferramentas aparentemente benignas podem ser executadas sem bloqueio.
 
 ---
 
@@ -75,11 +70,15 @@ Este estudo foi conduzido em ambiente de laboratório, com o objetivo de simular
 
 Para lidar com riscos de ransomware e proteger dados críticos:
 
-- **Backups regulares**: mantenha cópias offline e em nuvem.
-- **Gestão de chaves**: nunca perca a chave de criptografia; use cofres digitais (ex.: HashiCorp Vault).
-- **Monitoramento de rede**: detecte comportamentos suspeitos de criptografia em massa.
+- **Monitoramento contínuo** é essencial para detectar comportamentos suspeitos.  
+- **Políticas de Zero Trust** devem ser aplicadas para validar cada execução e acesso.  
+- **Backups criptografados e gestão de chaves** são fundamentais para garantir resiliência contra ataques.
+- **Utilização de arquivos em nuvem**, para guardar as versões dos documentos e seus snapshots.  
+- **Backups regulares**: mantenha cópias offline.
+- **Gestão de chaves**: nunca perca a chave de criptografia; use cofres digitais.
 - **Educação de usuários**: conscientização sobre phishing e boas práticas de segurança.
 - **Testes de recuperação**: valide periodicamente se backups podem ser restaurados.
-- **Ferramentas de zero trust**: a exemplo o Treathlocker, dificultando a execução de programas desconhecidos no perfil do usuário.
 
 ---
+
+
