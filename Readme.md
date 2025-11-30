@@ -59,6 +59,9 @@ Este estudo foi conduzido em ambiente de laboratório, com o objetivo de simular
    - Verificação de que todos os arquivos foram alterados.  
    - Testes de recuperação utilizando a chave recebida por e‑mail.
 
+<br>
+---
+<br>
 ### Consideração Final / Final Consideration
 
 “Os resultados demonstram que mesmo ambientes protegidos podem permitir execução de ferramentas não confiáveis, reforçando a necessidade de políticas de Zero Trust e auditoria contínua.”
