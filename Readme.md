@@ -78,7 +78,8 @@ Este estudo foi conduzido em ambiente de laboratório, com o objetivo de simular
 ## 🔐 Sugestões de Mitigação / Mitigation and best practices
 <br>
 
-Para lidar com riscos de Ransomware proteger dados críticos:
+Para lidar com riscos de Ransomware e proteger dados críticos:
+
 <br>
 
 - **Monitoramento contínuo** é essencial para detectar comportamentos suspeitos.
@@ -98,7 +99,9 @@ Para lidar com riscos de Ransomware proteger dados críticos:
 - **Testes de recuperação**: valide periodicamente se backups podem ser restaurados.
 
 <br>
+
 Para lidar com riscos de Keyloggers:
+
 <br>
 
 - **Políticas de Zero Trust** devem ser aplicadas para validar cada execução e acesso.
