@@ -62,9 +62,13 @@ Este estudo foi conduzido em ambiente de laboratório, com o objetivo de simular
 ### Consideração Final / Final Consideration
 
 “Os resultados demonstram que mesmo ambientes protegidos podem permitir execução de ferramentas não confiáveis, reforçando a necessidade de políticas de Zero Trust e auditoria contínua.”
+<br>
 ---
+<br>
+
 
 ## 🔐 Sugestões de Mitigação / Mitigation and best practices
+<br>
 
 Para lidar com riscos de ransomware e proteger dados críticos:
 
